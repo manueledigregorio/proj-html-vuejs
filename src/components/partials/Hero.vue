@@ -1,13 +1,18 @@
 <script>
 export default {
-  name:'hero'
+  name:'Hero'
 }
 </script>
 
 <template>
-  
+  <div class="hero">
+    <h1>ciao</h1>
+  </div>
 </template>
 
-<style>
-
+<style lang="scss" scoped>
+  .hero{
+    background-image: url('/hero-big.jpg');
+    height: 620px;
+  }
 </style>

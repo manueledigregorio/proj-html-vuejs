@@ -87,7 +87,6 @@ header{
   }
 
   .right i {
-    font-size: 1.3rem;
     color: $greey;
     padding-left: 30px;
   }

@@ -1,9 +1,9 @@
 <script>
-import hero from './partials/Hero.vue';
+import Hero from './partials/Hero.vue';
 export default {
   name: 'Main',
-  comments:{
-    hero,
+  components:{
+    Hero,
 
   }
 }
