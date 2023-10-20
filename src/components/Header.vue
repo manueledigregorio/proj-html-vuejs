@@ -95,7 +95,7 @@ header{
     color: $black;
     margin-right: 85px;
 
-    &:hover{
+    &:active{
     color: $orange;
     padding-bottom: 10px;
     border-bottom: 3px solid $orange ;
