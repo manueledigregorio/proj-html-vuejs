@@ -1,12 +1,16 @@
 <script>
 import heroCard from '../../data/partials/heroCard'
+import Card from './Card.vue';
 export default {
   name:'Hero',
   data() {
     return {
-      heroCard
+      heroCard,
     }
   },
+  components:{
+    Card,
+  }
 }
 </script>
 
@@ -14,11 +18,11 @@ export default {
   <div class="content-hero">    
     <div class="hero d-flex justify-content-center align-content-center   ">
       <div class="title-hero  text-center " >
-      <h1 class="text">
+      <h1 class="font">
           Food Corner: Top japanese <br>
           Restaurant for sushi
         </h1>
-        <p class="text">March 25, 2019</p>
+        <p class="font">March 25, 2019</p>
 
         <div class="title">
           <h5>TODAY'S PICK</h5>
@@ -35,17 +39,15 @@ export default {
         </div>
 
         <div  class=" d-flex justify-content-between  px-5">
-          <div v-for="(items, index) in heroCard" :key="index" class="card border-0  text-center " style="width: 18rem;">
-            <img :src="items.image" class="card-img-top" :alt="items.text">
-              <h4 >{{ items.text }} </h4>
-              <p >{{ items.data }}</p>
-          </div>
+          <Card 
+          v-for="(items, index) in heroCard" 
+          :key="index" 
+          :cards="items"
+          
+          />
+          
         </div>
       </div>
-
-      
-
-        
     </div>
       
   </div>
@@ -95,10 +97,7 @@ export default {
      }
     }
 
-    .text{
-      font-family: 'Vidaloka', sans-serif;
-
-    }
+    
   }
   .my-container {
     bottom: 40px;
@@ -106,6 +105,10 @@ export default {
 
     hr{
       width: 407px;
+    }
+
+    p{
+      color: $lightblack;
     }
 
   }
@@ -117,6 +120,8 @@ export default {
     text-align: center;
     
   }
+
+  
 }
   
 
