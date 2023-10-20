@@ -1,9 +1,11 @@
 <script>
 import Hero from './partials/Hero.vue';
+import Recipes from './partials/Recipes.vue';
 export default {
   name: 'Main',
   components:{
     Hero,
+    Recipes,
 
   }
 }
@@ -12,6 +14,7 @@ export default {
 <template>
 <main>
   <Hero />
+  <Recipes/>
 </main>
     
 
