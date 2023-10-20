@@ -10,10 +10,12 @@ export default {
 </script>
 
 <template>
-  <main>
-    <Hero />
+<main>
+  <Hero />
+</main>
+    
 
-  </main>
+  
 </template>
 
 <style lang="scss" scoped>
