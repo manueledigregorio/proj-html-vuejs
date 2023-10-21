@@ -13,7 +13,6 @@ name: 'Search',
     </div>
     <div class="form-search">
       <input 
-        v-model="search"
         class="form-control custom-input me-2" type="search"
         placeholder="Seach..." aria-label="Search" 
       />

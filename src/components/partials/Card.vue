@@ -41,16 +41,20 @@ export default {
   .hover-container {
   position: relative;
   overflow: hidden;
-}
 
-.hover-container .img-hover {
+  .img-hover {
   width: 100%;
   height: 100%;
   transition: filter 0.5s;
   border-radius: 0;
+  }
+  &:hover .hover-text {
+    opacity: 1;
+  }
+
 }
 
-.hover-container .hover-text {
+ .hover-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -65,18 +69,15 @@ export default {
   transition: opacity 0.5s;
   width: 100%;
   height: 100%;
+
+  i{
+    width: 40px;
+    height: 40px;
+    background-color: $white;
+    border-radius: 50%;
+    color: rgba(1, 0, 0, 0.488) ;
+  }
 }
 
-.hover-container:hover .hover-text {
-  opacity: 1;
-}
-
-i{
-  width: 40px;
-  height: 40px;
-  background-color: $white;
-  border-radius: 50%;
-  color: rgba(1, 0, 0, 0.488) ;
-}
 
 </style>
