@@ -38,13 +38,15 @@ export default {
           <div class="right-text"><hr></div>
         </div>
 
-        <div  class=" d-flex justify-content-between  px-5">
-          <Card 
+        <div  class=" row px-5">
+          <div
           v-for="(items, index) in heroCard" 
           :key="index" 
-          :cards="items"
+           class="col-4"> <Card class="cards" :cards="items"/></div>
+         
           
-          />
+          
+          
           
         </div>
       </div>
@@ -110,7 +112,9 @@ export default {
     p{
       color: $lightblack;
     }
-
+    .cards{
+      width: 21rem;
+    }
   }
 
   .line-text{

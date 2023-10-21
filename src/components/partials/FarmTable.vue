@@ -1,6 +1,7 @@
 <script>
 import BigCard from "./BigCard.vue";
 import { CardTwo } from "../../data/partials/bigCard";
+import FarmTableDown from "./FarmTableDown.vue";
 export default {
   name: "FarmTable",
   data() {
@@ -10,6 +11,7 @@ export default {
   },
   components: {
     BigCard,
+    FarmTableDown,
   },
 };
 </script>
@@ -17,26 +19,24 @@ export default {
 <template>
   <div class="container">
     <div class="title">
-
-      <div class=" blog  float-end ">
-        <a  href="#"
+      <div class="blog float-end">
+        <a href="#"
           >READ OUR BLOG
           <i class="fa-solid fa-book-open-reader"></i>
         </a>
       </div>
-      <div class=" w-50"> 
+      <div class="w-50">
         <h4>FARM TO TABLE</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque laborum
-          qui ut maiores, tempore id nihil facilis minus quaerat doloribus!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+          laborum qui ut maiores, tempore id nihil facilis minus quaerat
+          doloribus!
         </p>
       </div>
-      
-      
-    </div> 
-      <div class="row w-100 ">
-        <div class="col-8">
-          <div class="mycontainer">
+    </div>
+    <div class="row w-100">
+      <div class="col-8 p-0">
+        <div class="mycontainer">
           <BigCard
             v-for="(items, index) in CardTwo"
             :key="index"
@@ -53,37 +53,38 @@ export default {
             </div>
           </div>
         </div>
-        </div>
-      
-        <div class="col-4">
-
-          <div class=" container-right ms-4">
-            <div class="image-bg">
-              <div class="cont-text text-center ">
-                <h5>VIEW OUR 
-                    LATEST 
-                    RECIPES
-                </h5>
-              </div>
-            </div>
-
-            <div class="container-down pt-5  position-relative" >
-              <img class=" w-100  " src="/singapore-featured-image-400x263.jpg" alt="">
-              <div class=" text position-absolute "><p> City Guide: Singapore</p></div>
-              <div>
-                <a class="d-flex justify-content-center pt-2 " href="#">
-                  <i class="fa-solid fa-earth-americas"></i>
-                  <p>VIEW ALL GUIDES CITY</p>
-                </a>
-              </div>
-            </div>
-
-            <div class="line mt-5 "></div>
-          </div>
-         
-        </div>
+        <FarmTableDown />
       </div>
 
+      <div class="col-4">
+        <div class="container-right ms-4">
+          <div class="image-bg">
+            <div class="cont-text text-center">
+              <h5>VIEW OUR LATEST RECIPES</h5>
+            </div>
+          </div>
+
+          <div class="container-down pt-5 position-relative">
+            <img
+              class="w-100"
+              src="/singapore-featured-image-400x263.jpg"
+              alt=""
+            />
+            <div class="text position-absolute">
+              <p>City Guide: Singapore</p>
+            </div>
+            <div>
+              <a class="d-flex justify-content-center pt-2" href="#">
+                <i class="fa-solid fa-earth-americas"></i>
+                <p>VIEW ALL GUIDES CITY</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="line mt-5"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -91,10 +92,9 @@ export default {
 @use "../../sass/partials/variabiles.scss" as *;
 .container {
   margin-top: 150px;
-  .blog{
-   
+  .blog {
     i {
-    font-size: 0.9em;
+      font-size: 0.9em;
     }
 
     a {
@@ -104,7 +104,6 @@ export default {
       background-color: $orange;
     }
   }
-  
 
   .mycontainer {
     width: 100%;
@@ -122,7 +121,6 @@ export default {
     }
   }
 
-
   .image-bg {
     background-image: url(public/ad-bg.jpg);
     background-size: cover;
@@ -131,41 +129,40 @@ export default {
     width: 100%; /* Imposta la larghezza al 100% */
     margin-top: 80px;
 
-    .cont-text{
+    .cont-text {
       width: 100%;
       height: 100%;
       padding: 160px 120px;
 
-      h5{
+      h5 {
         line-height: 1.9rem;
       }
     }
   }
 
-  .container-down{ 
-    .text{
-
+  .container-down {
+    .text {
       top: 170px;
       background-color: rgba(0, 0, 0, 0.8);
 
-      p{
+      p {
         font-size: 1.3rem;
         color: $white;
         margin: 8px 15px;
       }
     }
 
-    a{
+    a {
       background-color: $orange;
       color: $white;
     }
 
-    i{
+    i {
       margin: 5px 10px;
     }
   }
 
-  .line{
+  .line {
     border: 1px solid gainsboro;
   }
 }

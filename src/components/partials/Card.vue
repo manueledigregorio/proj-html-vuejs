@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <div class="card border-0 pt-3 text-center" style="width: 21rem;">
+  <div class="card border-0 mt-3 text-center" >
     <div class="hover-container">
       <img :src="cards.image" class="img-hover card-img-top" :alt="cards.text">
      
