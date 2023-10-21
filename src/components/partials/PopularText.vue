@@ -12,7 +12,7 @@ export default {
 
 <template>
 
-<div class=" container-popular w-100 d-flex ">
+<div class=" container-popular w-100 d-flex mb-5">
   <div class=" d-flex p-3 justify-content-center  align-items-center popular w-50">
     <p class="font">Popular</p>
   </div>
@@ -24,15 +24,15 @@ export default {
   <div 
     v-for="(items, index) in popular" 
     :key="index"
-  class="text mt-1  d-flex">
-  <div>
+    class="text mt-3  d-flex">
+  <div class="p-1">
     <img :src="items.image" alt="">
   </div>
   <div>
     <p>
       {{ items.text }}
     </p>
-    <p class="color pt-1">{{ items.data }}</p>
+    <p class="color">{{ items.data }}</p>
   </div>
 
 </div>
@@ -64,12 +64,12 @@ export default {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-right: 5px;
-    margin: 15px 10px;
+    margin-right: 10px;
   }
   
   .color{
     color: $greey;
+    font-size: 0.8rem;
   }
   
 }

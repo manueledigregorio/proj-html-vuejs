@@ -6,6 +6,7 @@ import Seach from "./Seach.vue";
 import FarmRight from "./FarmRight.vue"
 import FollowUs from "./FollowUs.vue";
 import PopularText from "./PopularText.vue";
+import CardTweet from "./CardTweet.vue";
 export default {
   name: "FarmTable",
   data() {
@@ -20,6 +21,7 @@ export default {
     FarmRight,
     FollowUs,
     PopularText,
+    CardTweet,
   },
 };
 </script>
@@ -73,6 +75,7 @@ export default {
           <Seach />
           <FollowUs />
           <PopularText />
+          <CardTweet />
         </div>
 
         
