@@ -11,9 +11,6 @@ export default {
 
     }
   },
-
-  
-  
 }
 </script>
 
@@ -33,8 +30,9 @@ export default {
                 <div  >
                   <ul class=" d-flex " >
                     <li v-for="(items , index) in icon" :key="index">
-                      <a :href="items.href">
-                        <i :class="items.brand"></i>
+                      <a v-if="items.check !== null" :href="items.href">
+                        <i  :class="items.brand"></i>
+
                       </a>
                       </li>
                   </ul> 

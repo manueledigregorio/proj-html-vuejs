@@ -37,6 +37,7 @@ name: 'Search',
     width: 100%;
     border: 1px solid gainsboro;
     border-radius: 5px;
+    padding: 7px;
 
      i{
       color: #B1B1B1;

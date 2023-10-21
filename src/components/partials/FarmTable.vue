@@ -4,6 +4,8 @@ import { CardTwo } from "../../data/partials/bigCard";
 import FarmTableDown from "./FarmTableDown.vue";
 import Seach from "./Seach.vue";
 import FarmRight from "./FarmRight.vue"
+import FollowUs from "./FollowUs.vue";
+import PopularText from "./PopularText.vue";
 export default {
   name: "FarmTable",
   data() {
@@ -16,6 +18,8 @@ export default {
     FarmTableDown,
     Seach,
     FarmRight,
+    FollowUs,
+    PopularText,
   },
 };
 </script>
@@ -67,6 +71,8 @@ export default {
         <div class="container-right ms-4">
           <FarmRight />
           <Seach />
+          <FollowUs />
+          <PopularText />
         </div>
 
         
