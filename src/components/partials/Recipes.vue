@@ -1,13 +1,20 @@
 <script>
 import imgRecepies from '../../data/partials/imgRecepies';
+import BigCard from './BigCard.vue';
+import { CardOne } from '../../data/partials/bigCard';
 export default {
   name: "Recipes",
 
   data() {
     return {
-      imgRecepies
+      imgRecepies,
+      CardOne
     }
   },
+  components:{
+    BigCard,
+    
+  }
 };
 </script>
 
@@ -26,25 +33,12 @@ export default {
       <div class="d-flex">
         <div class="col-6 me-2 ">
           <div class="mycontainer ">
-            <div class="cards">
-              <div>
-                <img src="/Yogurt-Nan-600x395.jpg" alt="" />
-              </div>
-              <div class="p-4">
-                <h4 class="font">Lunch favorite with salad Naan And Beans</h4>
-                <p class=" p-2 ">Bakery, Featured, Healty, Latest Recipes, Staff Picks</p>
-                <hr>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Pariatur unde, magnam iure fugit earum nostrum! Cupiditate
-                  iste neque nulla saepe, dolor delectus ullam perspiciatis
-                  inventore maiores vel aliquam adipisci id quaerat perferendis
-                  tenetur atque enim sit hic qui harum facere earum ex accusamus
-                  in. Sunt eos minus ducimus unde labore.
-                </p>
-               
-              </div>
-            </div>
+
+            <BigCard 
+            v-for="(items, index) in CardOne"
+            :key="index"
+            :items="items"/>
+
             <button type="button" class="btn color btn-lg">LEARN MORE</button>
           </div>
         </div>
@@ -74,6 +68,7 @@ export default {
 
 .text {
   text-align: center;
+  width: 40%;
   h4 {
     padding: 20px;
   }
@@ -88,9 +83,7 @@ export default {
   background-color: $white;
   padding-bottom: 35px;
 
-  img {
-    width: 100%;
-  }
+  
 
   .color {
     background-color: $orange;
