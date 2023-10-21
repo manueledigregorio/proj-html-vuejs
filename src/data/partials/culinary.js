@@ -1,6 +1,6 @@
 export default [
   {
-    img: 'public/drinks-recipes.png',
+    img: '/drinks-recipes.png',
     text:'DRINK'
   },
   {
@@ -28,7 +28,7 @@ export default [
     text:'APPETISERS'
   },
   {
-    img: 'public/quick-easy-recipes.png',
+    img: '/quick-easy-recipes.png',
     text:'QUICK & EASY'
   },
 ]
