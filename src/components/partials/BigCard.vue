@@ -35,9 +35,13 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+  @use '../../sass/partials/variabiles.scss' as *;
 img {
     width: 100%;
+  }
+
+  p{
+    color: $lightblack;
   }
 
 
