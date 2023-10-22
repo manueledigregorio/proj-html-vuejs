@@ -3,7 +3,7 @@ import BigCard from "./BigCard.vue";
 import { CardTwo } from "../../data/partials/bigCard";
 import FarmTableDown from "./FarmTableDown.vue";
 import Seach from "./Seach.vue";
-import FarmRight from "./FarmRight.vue"
+import FarmRight from "./FarmRight.vue";
 import FollowUs from "./FollowUs.vue";
 import PopularText from "./PopularText.vue";
 import CardTweet from "./CardTweet.vue";
@@ -68,7 +68,7 @@ export default {
       </div>
       <!-- CHIUSURA COLONNA DI DESTRA 8-->
 
-      <!--COLONNA DI SINISTRA 4-->  
+      <!--COLONNA DI SINISTRA 4-->
       <div class="col-4">
         <div class="container-right ms-4">
           <FarmRight />
@@ -77,14 +77,9 @@ export default {
           <PopularText />
           <CardTweet />
         </div>
-
-        
       </div>
-      <!-- CHIUSURA COLONNA DI SINISTRA 4-->  
-
-
+      <!-- CHIUSURA COLONNA DI SINISTRA 4-->
     </div>
-   
   </div>
 </template>
 

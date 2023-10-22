@@ -1,11 +1,18 @@
 
 <script>
+import Form from "./partials/Form.vue";
 export default {
-  name:'Footer'
+  name:'Footer',
+
+  components:{
+    Form,
+  }
 }
 </script>
 
 <template>
+
+      <Form />
   
 </template>
 
