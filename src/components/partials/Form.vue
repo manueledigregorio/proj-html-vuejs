@@ -1,16 +1,19 @@
 <script>
 export default {
-name:'Form'
-}
+  name: "Form",
+};
 </script>
 
 <template>
   <div class="container-form">
     <h2 class="font my-4">Subscibe <span>&</span> Recieve A Free eBook</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis non laudantium maiores sit iure ipsum quasi tenetur, nam sequi at.</p>
-    <div class="d-flex my-5 ">
-      <input type="text" placeholder="insert your mail...">
-      <button type="button" class=" color ">SUBSCRIBE</button>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis non
+      laudantium maiores sit iure ipsum quasi tenetur, nam sequi at.
+    </p>
+    <div class="d-flex my-5">
+      <input type="text" placeholder="insert your mail..." />
+      <button type="button" class="color">SUBSCRIBE</button>
     </div>
     <span>Lorem ipsum dolor sit amet.</span>
   </div>
@@ -19,8 +22,8 @@ name:'Form'
 <style lang="scss" scoped>
 @use "../../sass/partials/variabiles.scss" as *;
 
-.container-form{
-  background-image: url('/Form-img.png');
+.container-form {
+  background-image: url("/Form-img.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -30,20 +33,19 @@ name:'Form'
   padding-bottom: 150px;
   padding-top: 100px;
 
-  h2{ 
-    
-    span{
-    color: $orange;
+  h2 {
+    span {
+      color: $orange;
     }
   }
 
-  input{
+  input {
     border: 1px solid $greey;
     border-radius: 5px;
     padding: 13px 170px;
   }
-  
-  .color{
+
+  .color {
     background-color: $orange;
     color: $white;
     border-radius: 5px;
@@ -51,7 +53,5 @@ name:'Form'
     border: $orange;
     padding: 13px 60px;
   }
-  
 }
-
 </style>

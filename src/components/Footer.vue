@@ -1,11 +1,13 @@
 
 <script>
 import Form from "./partials/Form.vue";
+import CarouselFooter from "./CarouselFooter.vue";
 export default {
   name:'Footer',
 
   components:{
     Form,
+    CarouselFooter,
   }
 }
 </script>
@@ -13,6 +15,7 @@ export default {
 <template>
 
       <Form />
+      <CarouselFooter />
   
 </template>
 
