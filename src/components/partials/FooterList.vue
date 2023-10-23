@@ -68,7 +68,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../sass/partials/variabiles.scss" as *;
+@use "../../sass/partials/variabiles.scss" as *;
 
 h6 {
   color: $orange;
