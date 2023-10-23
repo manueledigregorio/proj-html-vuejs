@@ -3,28 +3,25 @@
 import FooterList from "./FooterList.vue";
 import Form from "./partials/Form.vue";
 import CarouselFooter from "./CarouselFooter.vue";
-import Copyright from "./Copyright.vue"
+import Copyright from "./Copyright.vue";
 export default {
-  name:'Footer',
+  name: "Footer",
 
-  components:{
+  components: {
     Form,
     CarouselFooter,
     FooterList,
-    Copyright
-  }
-}
+    Copyright,
+  },
+};
 </script>
 
 <template>
-
-      <Form />
-      <CarouselFooter />
-      <FooterList />
-      <Copyright />
-  
+  <Form />
+  <CarouselFooter />
+  <FooterList />
+  <Copyright />
 </template>
 
 <style lang="scss" scoped>
-
 </style>

@@ -1,20 +1,19 @@
 <script>
-import imgRecepies from '../../data/partials/imgRecepies';
-import BigCard from './BigCard.vue';
-import { CardOne } from '../../data/partials/bigCard';
+import imgRecepies from "../../data/partials/imgRecepies";
+import BigCard from "./BigCard.vue";
+import { CardOne } from "../../data/partials/bigCard";
 export default {
   name: "Recipes",
 
   data() {
     return {
       imgRecepies,
-      CardOne
-    }
+      CardOne,
+    };
   },
-  components:{
+  components: {
     BigCard,
-    
-  }
+  },
 };
 </script>
 
@@ -31,31 +30,27 @@ export default {
     </div>
     <div class=" ">
       <div class="d-flex">
-        <div class="col-6 me-2 ">
-          <div class="mycontainer ">
-
-            <BigCard 
-            v-for="(items, index) in CardOne"
-            :key="index"
-            :items="items"/>
+        <div class="col-6 me-2">
+          <div class="mycontainer">
+            <BigCard
+              v-for="(items, index) in CardOne"
+              :key="index"
+              :items="items"
+            />
 
             <button type="button" class="btn color btn-lg">LEARN MORE</button>
           </div>
         </div>
-        <div class="col-6 ms-2 ">
-          <div class="row ">
-            <div 
-              v-for="(image , index) in imgRecepies" 
-              :key="index" 
-              class="col-6">
-              <img 
-                :src="image.img"
-                class="image" 
-              >
+        <div class="col-6 ms-2">
+          <div class="row">
+            <div
+              v-for="(image, index) in imgRecepies"
+              :key="index"
+              class="col-6"
+            >
+              <img :src="image.img" class="image" />
             </div>
           </div>
-         
-
         </div>
       </div>
     </div>
@@ -83,8 +78,6 @@ export default {
   background-color: $white;
   padding-bottom: 35px;
 
-  
-
   .color {
     background-color: $orange;
     color: $white;
@@ -93,7 +86,7 @@ export default {
   }
 }
 
-.image{
+.image {
   width: 270px;
   margin-bottom: 30px;
 }

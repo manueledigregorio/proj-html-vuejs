@@ -1,8 +1,8 @@
 
 <script>
 export default {
-name:'FarmRight'
-}
+  name: "FarmRight",
+};
 </script>
 
 <template>
@@ -13,11 +13,7 @@ name:'FarmRight'
   </div>
 
   <div class="container-down pt-5 position-relative">
-    <img
-      class="w-100"
-      src="/singapore-featured-image-400x263.jpg"
-      alt=""
-    />
+    <img class="w-100" src="/singapore-featured-image-400x263.jpg" alt="" />
     <div class="text position-absolute">
       <p>City Guide: Singapore</p>
     </div>
@@ -37,23 +33,23 @@ name:'FarmRight'
 @use "../../sass/partials/variabiles.scss" as *;
 
 .image-bg {
-    background-image: url(public/ad-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 410px;
-    width: 100%; /* Imposta la larghezza al 100% */
-    margin-top: 80px;
+  background-image: url(public/ad-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 410px;
+  width: 100%; /* Imposta la larghezza al 100% */
+  margin-top: 80px;
 
-    .cont-text {
-      width: 100%;
-      height: 100%;
-      padding: 160px 120px;
+  .cont-text {
+    width: 100%;
+    height: 100%;
+    padding: 160px 120px;
 
-      h5 {
-        line-height: 1.9rem;
-      }
+    h5 {
+      line-height: 1.9rem;
     }
   }
+}
 
 .container-down {
   .text {
@@ -79,6 +75,4 @@ name:'FarmRight'
 .line {
   border: 1px solid gainsboro;
 }
-
-
 </style>
