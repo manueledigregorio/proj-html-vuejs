@@ -1,5 +1,6 @@
 
 <script>
+import FooterList from "./FooterList.vue";
 import Form from "./partials/Form.vue";
 import CarouselFooter from "./CarouselFooter.vue";
 export default {
@@ -8,6 +9,7 @@ export default {
   components:{
     Form,
     CarouselFooter,
+    FooterList
   }
 }
 </script>
@@ -16,6 +18,7 @@ export default {
 
       <Form />
       <CarouselFooter />
+      <FooterList />
   
 </template>
 
