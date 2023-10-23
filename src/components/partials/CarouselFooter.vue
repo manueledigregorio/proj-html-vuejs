@@ -1,5 +1,5 @@
 <script>
-import Carousel from "../data/partials/Carousel";
+import Carousel from "../../data/partials/Carousel";
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 

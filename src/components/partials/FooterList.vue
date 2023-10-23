@@ -1,6 +1,6 @@
 <script>
-import header from "../data/header";
-import icon from "../data/partials/icon";
+import header from "../../data/header";
+import icon from "../../data/partials/icon";
 export default {
   name: "FooterList",
   data() {

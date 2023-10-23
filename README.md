@@ -1,7 +1,16 @@
-# Vue 3 + Vite
+## Struttura Vue 
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+1. Suddivido in tre grandi componenti **Header**, **Main,** **Footer**
+1. Il **main** lo suddivido il 4 micro componenti:  **Hero,**  **Recipes,** **CulinaryColl,** **FarmTable**
+1.  **Hero** contiene un sotto elemento ciclato : **Card**
+1.  **Recipes** contiene un sotto componente chiamato **BigCard** + l'array di oggetti foto
+1.  **CulinaryColl** un blocco che contiene se stesso 
+1.  **FarmTable** un blocco suddiviso in due colonne una da 8 l'altra da 4
+1.  **Col-8** ha un sotto componente **BigCard** 
+1.  **Col-4** contiene questi sotto componenti:  **Search,FarmRight,FollowUs,PopularText,CardTweet**
+1.  **Footer** Contiene 4 sotto componenti :  **Form,CarouselFooter,FooterList,Copyright**
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+
+    

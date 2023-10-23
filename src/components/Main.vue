@@ -3,7 +3,6 @@ import Hero from "./partials/Hero.vue";
 import Recipes from "./partials/Recipes.vue";
 import CulinaryColl from "./partials/CulinaryColl.vue";
 import FarmTable from "./partials/FarmTable.vue";
-import Footer from "./Footer.vue";
 
 export default {
   name: "Main",
@@ -12,7 +11,6 @@ export default {
     Recipes,
     CulinaryColl,
     FarmTable,
-    Footer,
   },
 };
 </script>

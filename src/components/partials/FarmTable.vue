@@ -2,7 +2,7 @@
 import BigCard from "./BigCard.vue";
 import { CardTwo } from "../../data/partials/bigCard";
 import FarmTableDown from "./FarmTableDown.vue";
-import Seach from "./Seach.vue";
+import Search from "./Search.vue";
 import FarmRight from "./FarmRight.vue";
 import FollowUs from "./FollowUs.vue";
 import PopularText from "./PopularText.vue";
@@ -17,7 +17,7 @@ export default {
   components: {
     BigCard,
     FarmTableDown,
-    Seach,
+    Search,
     FarmRight,
     FollowUs,
     PopularText,
@@ -72,7 +72,7 @@ export default {
       <div class="col-4">
         <div class="container-right ms-4">
           <FarmRight />
-          <Seach />
+          <Search />
           <FollowUs />
           <PopularText />
           <CardTweet />

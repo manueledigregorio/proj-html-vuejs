@@ -1,9 +1,9 @@
 
 <script>
-import FooterList from "./FooterList.vue";
+import FooterList from "./partials/FooterList.vue";
 import Form from "./partials/Form.vue";
-import CarouselFooter from "./CarouselFooter.vue";
-import Copyright from "./Copyright.vue";
+import CarouselFooter from "./partials/CarouselFooter.vue";
+import Copyright from "./partials/Copyright.vue";
 export default {
   name: "Footer",
 
