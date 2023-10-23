@@ -1,14 +1,12 @@
 <script>
+  import Carousel from '../data/partials/Carousel'
   // Import Swiper Vue.js components
   import { Swiper, SwiperSlide } from 'swiper/vue';
 
   // Import Swiper styles
   import 'swiper/css';
-
-  import 'swiper/css/pagination';
-
   // import required modules
-  import { Pagination } from 'swiper/modules';
+  import { Autoplay } from 'swiper/modules';
   export default {
     components: {
       Swiper,
@@ -16,7 +14,8 @@
     },
     setup() {
       return {
-        modules: [Pagination],
+        modules: [Autoplay],
+        Carousel
       };
     },
   };
@@ -25,25 +24,22 @@
 <template>
   <swiper
     :slidesPerView="4"
-    :spaceBetween="50"
-    :pagination="{
-      clickable: true,
-    }"
+    :spaceBetween="0"
+    :loop="true"
     :modules="modules"
+    :autoplay="{delay: 2500,disableOnInteraction: false,}"
     class="mySwiper"
   >
-    <swiper-slide><img src="public/Yogurt-Nan-400x263.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="public/r-rachel-park-366508-unsplash-min-400x263.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="public/fi-korean-food-400x263.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="public/Yogurt-Nan-400x263.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src=" public/Mixed-fruits-400x263.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="public/r-michelle-tsang-500721-unsplash-min-400x263.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src=" public/Mixed-fruits-400x263.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="public/fi-toasts-400x263.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="public/fi-roundup-400x263.jpg" alt=""></swiper-slide>
+    <swiper-slide v-for="(items, index) in Carousel" :key="index">
+      <img :src="items.img" :alt="items.name">
+    </swiper-slide>
   </swiper>
 </template>
 
 <style lang="scss" scoped>
-
+img{
+  width: 100%;
+  object-fit: cover;
+}
+  
 </style>

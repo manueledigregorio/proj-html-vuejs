@@ -24,12 +24,14 @@ export default {
 
 .container-form {
   background-image: url("/Form-img.png");
+  background-color: $white;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 110px;
   padding-bottom: 150px;
   padding-top: 100px;
 
