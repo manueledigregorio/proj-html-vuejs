@@ -20,7 +20,7 @@ export default {
     <div 
       v-for="(items, index) in cardFarmDown" 
       :key="index" 
-      class="col-6 pt-2 ">
+      class="col-6 card pt-2 ">
       <Card :cards="items"/> 
     </div>
     <button type="button" class="btn mt-4 bt btn-lg">LOAD MORE POSTS</button>
@@ -32,9 +32,14 @@ export default {
 @use "../../sass/partials/variabiles.scss" as *;
 
 .bt{
-  background-color: gainsboro;
-  height: 40px;
+  background-color: $button;
+  padding: 10px;
   border-radius: 0px;
+}
+
+.card{
+  background-color: $background;
+  border: 0;
 }
 
 

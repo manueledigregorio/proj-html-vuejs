@@ -125,7 +125,8 @@ ul{
 
     li{
       padding-bottom: 30px;
-      a{
+      a,
+      p{
         color: $lightblack;
       }
     }
@@ -136,6 +137,10 @@ ul{
     padding-left: 20px;
     img{
       margin-bottom: 10px;
+    }
+
+    h6{
+      padding-bottom: 30px;
     }
    
   }
